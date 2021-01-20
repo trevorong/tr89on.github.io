@@ -13,20 +13,20 @@ html {
 
 a:link {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 a:visited {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 body {
-    max-width: 75%;
+    max-width: 85%;
     margin-left: auto;
     margin-right: auto;
 
-    background-color: whitesmoke;
+    background-color: white;
 
     color: #765943;
 }
@@ -58,13 +58,23 @@ body {
     align-content: space-around stretch;
 }
 
+@media only screen and (max-width: 850px) {
+    .container {
+        flex-direction: column;
+        align-items: center stretch;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+}
+
 .link-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
 
-    max-width: 30rem;
     min-width: 200px;
 }
 
@@ -76,11 +86,11 @@ body {
 }
 
 .nav-link:hover{
-    color: white;
+    color: #20C9DE;
     text-decoration: underline; 
 }
 
-.nav-button {
+.sq-button {
     padding: 0px;
     margin-left: 8px;
     margin-right: 8px;
@@ -101,15 +111,9 @@ body {
     transition: 0.3s;
 }
 
-.nav-button:hover{
+.sq-button:hover{
     background-color: white;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-@media (max-width: 800px) {
-    .container {
-        flex-direction: column;
-    }
+    box-shadow: 0 16px 24px 0 rgba(0,0,0,0.2);
 }
 
 .card {
@@ -163,8 +167,8 @@ body {
     width: 100%;
     z-index: 1;
 
-    background-color: #C49C7F;
-    color: black;
+    background-color: #121200;
+    color: white;
 
     overflow: hidden;
     
@@ -175,6 +179,8 @@ body {
     justify-content: space-around;
     align-items: center;
     align-content: space-around;
+
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.2);
 }
 
 .footer {
