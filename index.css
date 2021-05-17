@@ -22,13 +22,18 @@ a:visited {
 }
 
 body {
-    max-width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: white;
 
-    color: #765943;
+    color: #121200;
+}
+
+header {
+  padding-top: 100px;
 }
 
 #about {
@@ -88,6 +93,7 @@ body {
 .nav-link:hover{
     color: #20C9DE;
     text-decoration: underline; 
+    text-decoration-color: #f15d40;
 }
 
 .sq-button {
@@ -95,10 +101,10 @@ body {
     margin-left: 8px;
     margin-right: 8px;
 
-    border: 2px solid #765943;
+    border: 2px solid white;
     border-radius: 10px;
 
-    background-color: whitesmoke;
+    background-color: #121200;
 
     width: 4rem;
     height: 4rem;
@@ -112,14 +118,14 @@ body {
 }
 
 .sq-button:hover{
-    background-color: white;
-    box-shadow: 0 16px 24px 0 rgba(0,0,0,0.2);
+    background-color: #23527c;
+    box-shadow: 0 16px 24px 0 rgba(255,255,255,0.2);
 }
 
 .card {
     background-color: white;
     
-    border: 2px solid #765943;
+    border: 2px solid #121200;
     border-radius: 10px;
     
     margin: .5rem;
@@ -168,7 +174,7 @@ body {
     z-index: 1;
 
     background-color: #121200;
-    color: white;
+    color: #23dbf3;
 
     overflow: hidden;
     
@@ -193,3 +199,19 @@ body {
     top: 0;
     width: 100%;
 }
+
+/* .card {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+} */
