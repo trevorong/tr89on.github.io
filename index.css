@@ -44,6 +44,19 @@ header {
   text-shadow: 0 0 15px #000;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+#copyright {
+  color: white;
+  text-shadow: 0 0 15px #000;
+  padding: 20px;
+  font-size: 15px;
+}
+
 #about {
     padding-top: 150px;
 }
